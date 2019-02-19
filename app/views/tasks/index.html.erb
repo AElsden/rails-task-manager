@@ -1,6 +1,8 @@
 <h1>My Tasks</h1>
 <% @tasks.each do |task| %>
-<form action="">
+<form action="" class="form">
+
+  <div class="title">
   <%if task.completed == true%>
     <input type="checkbox" checked>
     <%= link_to task.title, task_path(task)%>
@@ -8,8 +10,12 @@
     <input type="checkbox">
     <%= link_to task.title, task_path(task)%>
   <%end%>
+  </div>
+
+  <div class="delete-btn">
   <%= link_to "Delete", task_path(task), method: :delete, data: { confirm: "Are you sure?" } %>
-<%end%>
+  </div>
+  <%end%>
 </form>
 
 <%= link_to 'Add a new task', new_path %>

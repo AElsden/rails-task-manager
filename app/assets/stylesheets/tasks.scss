@@ -1,3 +1,27 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+background-color: rgb(240,240,240);
+font-family: sans-serif;
+display: flex;
+}
+
+.delete-btn a:link {
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    background: rgb(200,200,200);
+    transition: background 0.3s ease;
+    border: 1px solid #0F60C4;
+    width: 50px;
+    text-decoration: none;
+    display: block;
+}
+
+.delete-btn:hover a:link {
+  background: red;
+  color: white;
+
+}

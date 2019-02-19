@@ -1,5 +1,6 @@
 <h1>New Task</h1>
 
+<div class="form">
 <%= form_for(@task) do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
@@ -9,3 +10,4 @@
 
   <%= f.submit %>
 <% end %>
+</div>

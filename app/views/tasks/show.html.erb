@@ -2,12 +2,17 @@
 <p><%=@task.details%></p>
 <form action="">
   <%if @task.completed == true%>
-    <input type="checkbox" checked>
+
+    <div class="tick">
+      <input type="checkbox" checked>
       <p>This task is complete!</p>
+    </div>
     </input>
   <%else%>
-    <input type="checkbox">
+    <div class="tick">
+      <input type="checkbox">
       <p>This task needed to be done YESTERDAY!!</p>
+    </div>
     </input>
   <%end%>
 </form>
